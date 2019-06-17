@@ -25,3 +25,6 @@ def count(request):
     # status：响应的状态代码默认为“200”
     # using：用于加载模板的模板引擎的 :setting:`NAME `
     return render(request,'count.html',{'count_result':res})
+
+def about(request):
+    return render(request,'about.html')
