@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+<h1>词频统计</h1>
+{#双花括号直接引用，key值#}
+{{count_result}}
+<br>
+{% for key,value in count_result %}
+    <br>
+    {{key}} ----{{ value }}
+{% endfor %}
+
+</body>
+</html>
